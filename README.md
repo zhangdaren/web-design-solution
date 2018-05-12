@@ -23,22 +23,28 @@
 </br>
 2. 移动端，元素添加了click，在点击时，会有高亮半透明灰色矩形产生，可以使用如下CSS即可去掉。
 <br>
-    `-webkit-tap-highlight-color: transparent;`
+
+```html
+-webkit-tap-highlight-color: transparent;
+```
+
 </br>
 </br>
 </br>
 3. 点点点的处理
 <br>
-`/*PC端点点点(移动端用这个+rem布局时会从字的头部切掉5%左右)*/`
-`text-overflow : ellipsis; `
-`white-space : nowrap; `
-`overflow : hidden; `
+```css
+/*PC端点点点(移动端用这个+rem布局时会从字的头部切掉5%左右)*/
+text-overflow : ellipsis; 
+white-space : nowrap; 
+overflow : hidden; 
 <br>
-`/*移动端点点点*/`
-`display: -webkit-box;`
-`-webkit-line-clamp: 1;`
-`-webkit-box-orient: vertical;`
-`overflow : hidden; `
+/*移动端点点点*/
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow : hidden; 
+```
 </br>
 </br>
 </br>
