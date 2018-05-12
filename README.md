@@ -10,17 +10,21 @@
 
 1. IE浏览器script type属性含多余空格，将不会加载此js文件
 如下面代码写法，此js文件将不会加载：
+<br>
 `<script type="text/javascript " src="../js/jquery-ui.min.js"></script>`
+<br>
 解决方法，去掉这个多余的引号。只在IE里碰到过，具体版本已忘。
 </br>
 </br>
 </br>
 2. 移动端，元素添加了click，在点击时，会有高亮半透明灰色矩形产生，可以使用如下CSS即可去掉。
+<br>
     `-webkit-tap-highlight-color: transparent;`
 </br>
 </br>
 </br>
 3. 点点点的处理
+<br>
 `/*PC端点点点(移动端用这个+rem布局时会从字的头部切掉5%左右)*/`
 `text-overflow : ellipsis; `
 `white-space : nowrap; `
@@ -36,6 +40,7 @@
 </br>
 
 4. 一整屏渐变背景，在手机上给body添加渐变背景时，如果内容已经超出一屏时（一屏等于100vh，即屏幕显示的高度，非body滚动高度），渐变背景会重复的在第二屏显示。如果想不管body的高度是几屏都是一个完整的渐变，那可以采用以下css：
+<br>
 `background: linear-gradient(to top, #9A28FD, #A328FD) fixed;`
 `background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9A28FD), to(#A328FD)) fixed;`
 </br>
@@ -43,6 +48,7 @@
 </br>
 
 5. 有时候，需要做按钮的active效果，直接添加:active在PC端是正常的，在移动端却无法响应，此时可以给body添加一个空的事件即可解决，代码如下：
+<br>
 `<body ontouchstart="">`
 </br>
 </br>
