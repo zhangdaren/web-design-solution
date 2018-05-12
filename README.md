@@ -6,8 +6,6 @@
 
 以下是我工工作中碰到的各种疑难杂症留存，长期更新。
 
-
-
 1. IE浏览器script type属性含多余空格，将不会加载此js文件
 如下面代码写法，此js文件将不会加载：
 <br>
@@ -15,7 +13,6 @@
 ```html
 <script type="text/javascript " src="../js/jquery-ui.min.js"></script>
 ```
-
 <br>
 解决方法，去掉这个多余的引号。只在IE里碰到过，具体版本已忘。
 </br>
@@ -27,8 +24,6 @@
 ```html
 -webkit-tap-highlight-color: transparent;
 ```
-
-</br>
 </br>
 </br>
 3. 点点点的处理
@@ -46,8 +41,6 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 overflow : hidden; 
 ```
-
-</br>
 </br>
 </br>
 
@@ -58,8 +51,6 @@ overflow : hidden;
 background: linear-gradient(to top, #9A28FD, #A328FD) fixed;
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9A28FD), to(#A328FD)) fixed;
 ```
-
-</br>
 </br>
 </br>
 
@@ -69,13 +60,10 @@ background: -webkit-gradient(linear, 0 0, 0 bottom, from(#9A28FD), to(#A328FD)) 
 ```html
 <body ontouchstart="">
  ```
-    
-</br>
 </br>
 </br>
 
 6. `new date(2012-02-22 12:00:00)` 这种形式，在ios里不生效。解决方法：将 - 替换为 / 即可。
-</br>
 </br>
 </br>
 
