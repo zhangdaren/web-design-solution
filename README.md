@@ -11,7 +11,8 @@
 1. IE浏览器script type属性含多余空格，将不会加载此js文件
 如下面代码写法，此js文件将不会加载：
 <br>
-```javascript
+
+```html
 <script type="text/javascript " src="../js/jquery-ui.min.js"></script>
 ```
 
